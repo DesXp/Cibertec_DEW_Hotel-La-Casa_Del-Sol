@@ -1,42 +1,33 @@
+// En tu archivo: App.jsx
 
+// 1. IMPORTANTE: Importa HashRouter, no BrowserRouter
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
-import { Footer } from './components/Footer'
-import { BarraNavegacion } from './components/BarraNavegacion'
-
-import PaginaContacto from './pages/PaginaContacto'
-import PaginaHabitaciones from './pages/PaginaHabitaciones'
-import PaginaGaleria from './pages/PaginaGaleria'
-import PaginaReservas from './pages/PaginaReservas'
-import PaginaNosotros from './pages/PaginaNosotros'
-import { Home } from './pages/Home'
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Footer } from './components/Footer';
+import { BarraNavegacion } from './components/BarraNavegacion';
+// ...el resto de tus imports...
+import { Home } from './pages/Home';
 
 function App() {
   return (
-    // 1. Envuelve toda tu aplicación con BrowserRouter
-    <BrowserRouter>
-      {/* La barra de navegación ahora puede estar dentro o fuera de BrowserRouter */}
+    // 2. Usa HashRouter. NO LLEVA NINGUNA PROPIEDAD 'basename'.
+    <HashRouter>
       <BarraNavegacion />
-
-      {/* 2. Define el área donde cambiarán los componentes */}
-      <Routes>
-        {/* 3. Crea una ruta para cada página */}
-        <Route path="/" element={<Home />} />
-        <Route path="/PaginaHabitaciones" element={<PaginaHabitaciones />} />
-        <Route path="/PaginaGaleria" element={<PaginaGaleria />} />
-        <Route path="/PaginaReservas" element={<PaginaReservas />} />
-        <Route path="/PaginaNosotros" element={<PaginaNosotros />} />
-        <Route path="/PaginaContacto" element={<PaginaContacto />} />
-
-        {/* Opcional: una ruta por defecto si no se encuentra la URL */}
-        <Route path="*" element={<Home />} />
-      </Routes>
-
-      {/* Puedes agregar aquí otros componentes como el Footer */}
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/PaginaHabitaciones" element={<PaginaHabitaciones />} />
+          <Route path="/PaginaGaleria" element={<PaginaGaleria />} />
+          <Route path="/PaginaReservas" element={<PaginaReservas />} />
+          <Route path="/PaginaNosotros" element={<PaginaNosotros />} />
+          <Route path="/PaginaContacto" element={<PaginaContacto />} />
+          {/* Una ruta de respaldo por si algo falla */}
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </main>
       <Footer />
-    </BrowserRouter>
-  )
+    </HashRouter>
+  );
 }
 
-export default App
+export default App;
