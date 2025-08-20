@@ -1,11 +1,11 @@
 import React from 'react';
 
 // Importamos todas las imágenes necesarias
-import imgSuiteKing from '../images/Habitación-Suite-CamaKing.png';
-import imgSimple from '../images/Habitación-simple.png';
-import imgDobleStandard from '../images/Habitación-doble-standard.png';
-import imgEjecutivaDoble from '../images/Habitación-ejecutiva-doble.png';
-import imgEjecutivaKing from '../images/Habitación-ejecutiva-king.png';
+import imgSuiteKing from '../assets/images/Habitación-Suite-CamaKing.png';
+import imgSimple from '../assets/images/Habitación-simple.png';
+import imgDobleStandard from '../assets/images/Habitación-doble-standard.png';
+import imgEjecutivaDoble from '../assets/images/Habitación-ejecutiva-doble.png';
+import imgEjecutivaKing from '../assets/images/Habitación-ejecutiva-king.png';
 
 // Array con la información detallada de todas las habitaciones
 const listaHabitaciones = [

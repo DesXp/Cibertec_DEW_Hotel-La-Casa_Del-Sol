@@ -1,12 +1,12 @@
 import React from 'react';
 
 // Importamos las imágenes para que Vite las procese
-import img1 from '../images/Habitación-Suite-CamaKing.png';
-import img2 from '../images/Area-comun-indoors.png';
-import img3 from '../images/Area-comun-outdoor-con-luz.png';
-import img4 from '../images/Habitación-ejecutiva-doble.png';
-import img5 from '../images/Area-comun-outdoor-sin-luz.png';
-import img6 from '../images/Habitación-doble-standard.png';
+import img1 from '../assets/images/Habitación-Suite-CamaKing.png';
+import img2 from '../assets/images/Area-comun-indoors.png';
+import img3 from '../assets/images/Area-comun-outdoor-con-luz.png';
+import img4 from '../assets/images/Habitación-ejecutiva-doble.png';
+import img5 from '../assets/images/Area-comun-outdoor-sin-luz.png';
+import img6 from '../assets/images/Habitación-doble-standard.png';
 
 const images = [img1, img2, img3, img4, img5, img6];
 
