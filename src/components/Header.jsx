@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
@@ -6,7 +7,7 @@ export const Header = () => {
       <div className="encabezado-contenido">
         <h1>Bienvenido a Hotel Paraíso</h1>
         <p>Tu escapada de lujo te espera</p>
-        <a href="#habitaciones" className="btn">Ver Habitaciones</a>
+        <Link to="/PaginaHabitaciones" className="btn">Ver Habitaciones</Link>
       </div>
     </header>
   );

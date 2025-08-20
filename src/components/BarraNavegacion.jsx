@@ -8,7 +8,7 @@ export const BarraNavegacion = () => {
   return (
     <nav className="barra-navegacion">
       <div className="container">
-        <Link className="barra-navegacion-marca" href="/">
+        <Link className="barra-navegacion-marca" to="/">
           <img src={logo} alt="Hotel Logo" />
         </Link>
         <ul className="barra-navegacion-enlaces">
