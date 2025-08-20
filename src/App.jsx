@@ -15,7 +15,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   return (
     // 1. Envuelve toda tu aplicación con BrowserRouter
-    <BrowserRouter basename='/Cibertec_DEW_Hotel-La-Casa_Del-Sol/git '>
+    <BrowserRouter basename='/Cibertec_DEW_Hotel-La-Casa_Del-Sol/git'>
       {/* La barra de navegación ahora puede estar dentro o fuera de BrowserRouter */}
       <BarraNavegacion />
 
