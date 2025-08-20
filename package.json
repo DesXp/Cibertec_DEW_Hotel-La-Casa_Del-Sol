@@ -2,7 +2,6 @@
   "name": "hotel-proyecto",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://desxp.github.io/Cibertec_DEW_Hotel-La-Casa_Del-Sol",
   "type": "module",
   "scripts": {
     "dev": "vite",
