@@ -15,7 +15,7 @@ import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
 function App() {
   return (
     // 1. Envuelve toda tu aplicación con BrowserRouter
-    <HashRouter>
+    <BrowserRouter>
       {/* La barra de navegación ahora puede estar dentro o fuera de BrowserRouter */}
       <BarraNavegacion />
 
@@ -35,7 +35,7 @@ function App() {
 
       {/* Puedes agregar aquí otros componentes como el Footer */}
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
