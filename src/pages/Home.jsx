@@ -2,9 +2,9 @@ import React from 'react'
 import { Header } from '../components/Header'
 import { SobreNosotros } from '../components/SobreNosotros'
 import { Servicios } from '../components/Servicios'
-import { Galeria } from '../components/Galeria'
+import { Galeria } from '../components/ResumenGaleria'
 import { Testimonios } from '../components/Testimonios'
-import { SectionHabitaciones } from '../components/SectionHabitaciones'
+import { ResumenHabitaciones } from '../components/ResumenHabitaciones'
 
 
 export const Home = () => {
@@ -12,7 +12,7 @@ export const Home = () => {
     <>
     <Header />
     <SobreNosotros />
-    <SectionHabitaciones />
+    <ResumenHabitaciones />
     <Servicios />
     <Galeria />
     <Testimonios />
@@ -21,4 +21,4 @@ export const Home = () => {
   )
 }
 
-
+export default Home

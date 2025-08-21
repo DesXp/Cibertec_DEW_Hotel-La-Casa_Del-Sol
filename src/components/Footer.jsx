@@ -1,4 +1,15 @@
 import React from 'react';
+import LogoWhatsApp from '../assets/images/RedesSociales/WhatsApp.png'
+import LogoInstagram from '../assets/images/RedesSociales/Instagram.png'
+import LogoFacebook from '../assets/images/RedesSociales/Facebook.png'
+
+const Redes = [
+  { alt: "WhatsApp", imagen: LogoWhatsApp, url: "https://web.whatsapp.com"},
+  { alt: "Instagram", imagen: LogoInstagram, url: "https://instagram.com"},
+  { alt: "Facebook", imagen: LogoFacebook, url: "https://facebook.com"},
+];
+
+
 
 export const Footer = () => {
   return (
@@ -13,9 +24,16 @@ export const Footer = () => {
             <p><strong>Email:</strong> <a href="mailto:contacto@hotelparaiso.com">contacto@hotelparaiso.com</a></p>
           </div>
           <div className="footer-redes">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
+            <ul>
+              {Redes.map(redsocial => (
+                <li key={redsocial.alt}>
+                  <a href={redsocial.url} target="_blank">
+                    <img src={redsocial.imagen} alt={redsocial.alt}
+                    />
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
         <div className="footer-fondo">
