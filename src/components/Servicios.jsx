@@ -1,12 +1,6 @@
 import React from "react";
+import { servicios } from "../data/listaServicios";
 
-
-const servicios = [
-  { icono: "🌐", titulo: "Wi-Fi de Alta Velocidad" },
-  { icono: "🏊‍♀️", titulo: "Piscina Familiar" },
-  { icono: "💪", titulo: "Gimnasio 24/7" },
-  { icono: "💆‍♀️", titulo: "Spa y Centro de Bienestar" }
-];
 
 export const Servicios = () => {
   return (
@@ -14,10 +8,10 @@ export const Servicios = () => {
       <div className="container">
         <h2 className="titulo-seccion"> Nuestros Servicios</h2>
         <div className="cuadricula-servicios">
-          {servicios.map((servicio, index) => (
+          {servicios.map(({icono, titulo}, index) => (
             <div className="servicio-item" key={index}>
-              <div className="icono-servicio">{servicio.icono}</div>
-              <h4>{servicio.titulo}</h4>
+              <div className="icono-servicio">{icono}</div>
+              <h4>{titulo}</h4>
             </div>
           ))}
         </div>

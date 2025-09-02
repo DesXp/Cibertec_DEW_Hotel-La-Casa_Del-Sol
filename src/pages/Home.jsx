@@ -7,6 +7,8 @@ import { Testimonios } from '../components/Testimonios'
 import { ResumenHabitaciones } from '../components/ResumenHabitaciones'
 
 
+
+
 export const Home = () => {
   return (
     <>

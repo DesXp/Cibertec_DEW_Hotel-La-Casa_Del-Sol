@@ -8,6 +8,7 @@ import Contacto from './pages/Contacto'
 import Galeria from './pages/Galeria'
 import { useState } from 'react'
 import { HabitacionDetail } from './pages/HabitacionDetail'
+import { ScrollToTop } from "./components/ScrollTop";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 
     <BrowserRouter basename="/Cibertec_DEW_Hotel-La-Casa_Del-Sol">
       <BarraNavegacion />
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Habitaciones' element={<Habitaciones sethabitacionesReservadas={sethabitacionesReservadas} setcantidadHuespedes={setcantidadHuespedes} />} />

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import img1 from "../assets/images/Habitación-Suite-CamaKing.png";
 import img2 from "../assets/images/Area-comun-indoors.png";
 import img3 from "../assets/images/Area-comun-outdoor-con-luz.png";
@@ -9,6 +10,8 @@ import img6 from "../assets/images/Habitación-doble-standard.png";
 import { Link } from "react-router-dom";
 
 const images = [img1, img2, img3, img4, img5, img6];
+
+
 
 export const Galeria = () => {
 

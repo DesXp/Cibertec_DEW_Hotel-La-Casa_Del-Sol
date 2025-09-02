@@ -1,7 +1,6 @@
 import React from "react";
 
-const testimonio01 = "Una estancia maravillosa. El personal fue increíblemente atento y las instalaciones son de primera. ¡Totalmente recomendado!";
-const testimonio02 = "El mejor hotel en el que me he alojado. Las habitaciones son lujosas y la comida del restaurante es exquisita. Volveré sin duda.";
+import { testimoniosData } from '../data/testimonios-data'
 
 export const Testimonios = () => {
   return (
@@ -9,14 +8,12 @@ export const Testimonios = () => {
       <div className="container">
         <h2 className="titulo-seccion">Lo que dicen nuestros huéspedes</h2>
         <div className="cuadricula-testimonios">
-          <div className="tarjeta-testimonio">
-            <p>"{testimonio01}"</p>
-            <footer className="autor-testimonio">- Juan Pérez</footer>
-          </div>
-          <div className="tarjeta-testimonio">
-            <p>"{testimonio02}"</p>
-            <footer className="autor-testimonio">- María García</footer>
-          </div>
+          {testimoniosData.map(({ id, testimonio, autor }) => (
+            <div className="tarjeta-testimonio" key={id}>
+              <p>{testimonio}</p>
+              <footer className="autor-testimonio">- {autor}</footer>
+            </div>
+          ))}
         </div>
       </div>
     </section>

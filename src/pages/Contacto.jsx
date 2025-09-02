@@ -118,7 +118,7 @@ export const Contacto = ({ habitacionesReservadas, cantidadHuespedes }) => {
           <div className='formInputs'>
             <div>
               <div>
-                <label>Numero Habitaciones<span className='validacion'>*</span> </label>
+                <label>Numero Habitaciones <span className='validacion'>*</span> </label>
                 <input
                   type="text"
                   name='habitaciones'
@@ -128,7 +128,7 @@ export const Contacto = ({ habitacionesReservadas, cantidadHuespedes }) => {
                 <p className='validacion'>{errors.habitaciones?.message}</p>
               </div>
               <div>
-                <label>Cantidad de Huespedes<span className='validacion'>*</span> </label>
+                <label>Cantidad de Huespedes <span className='validacion'>*</span> </label>
                 <input
                   type="text"
                   name='huespedes'
@@ -147,7 +147,7 @@ export const Contacto = ({ habitacionesReservadas, cantidadHuespedes }) => {
                 <p className='validacion'>{errors.nombre?.message}</p>
               </div>
               <div>
-                <label>Apellido 1 <span className='validacion'>*</span> </label>
+                <label>Apellido Paterno <span className='validacion'>*</span> </label>
                 <input
                   type="text"
                   name="apellido1"
@@ -156,7 +156,7 @@ export const Contacto = ({ habitacionesReservadas, cantidadHuespedes }) => {
                 <p className='validacion'>{errors.apellido1?.message}</p>
               </div>
               <div>
-                <label>Apellido 2 <span className='validacion'></span> </label>
+                <label>Apellido Materno <span className='validacion'></span> </label>
                 <input
                   type="text"
                   name="apellido2"
@@ -185,7 +185,7 @@ export const Contacto = ({ habitacionesReservadas, cantidadHuespedes }) => {
                 <p className='validacion'>{errors.telefono?.message}</p>
               </div>
               <div>
-                <label>email <span className='validacion'>*</span> </label>
+                <label>Correo electrónico <span className='validacion'>*</span> </label>
                 <input
                   type="email"
                   name="email"
